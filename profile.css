@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	font-family: Verdana, sans-serif;
+	background: linear-gradient(lightgreen, lightblue, black);
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: 0}
+	to {opacity: 1}
+} 
+
+nav {
+	width: 100%;
+	overflow: hidden;
+	display: inline-flex;
+	text-align: center;
+	justify-items: center;
+	justify-content: space-evenly;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px;
+	color: black;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	flex-basis: auto;
+	justify-content: center;
+}
+
+figure img {
+	text-align: center;
+	border-radius: 25px;
+	border: white solid 6px;
+}
+
+.game {
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	line-height: 30px;
+	margin-bottom: 40px;
+	color: white;
+	font-size: 10px;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+li {
+	margin-left: 20px;
+}
+
+.bg {
+	background: url(/imgs/back.jfif);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 40px;
+	height: 500px;
+}
+
+@media screen and (max-width:725px) {
+	figure, article {
+		text-align: center;
+		width: 100%;
+	}
+	.bg {
+		height: 280px;
+		background-size: 100% 280px;
+	}
+}
+
+@media screen and (min-width:725px) and (max-width: 1000px) {
+	figure, article {
+		text-align: center;
+		width: 100%;
+	}
+	.bg {
+		height: 380px;
+	}
+}s
