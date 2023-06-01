@@ -1,4 +1,4 @@
-body {
+ body {
 	margin: 0;
 	font-family: Verdana, sans-serif;
 	background: linear-gradient(lightgreen, lightblue, black);
@@ -40,18 +40,11 @@ main {
 }
 
 figure img {
+	width: 280px;
+	height: 380px;
 	text-align: center;
 	border-radius: 25px;
 	border: white solid 6px;
-}
-
-.game {
-	padding-left: 4px;
-	padding-right: 4px;
-	margin-top: 80px;
-	margin-bottom: 80px;
-	text-align: center;
-	word-wrap: break-word;
 }
 
 footer {
@@ -71,18 +64,19 @@ footer a:hover {
 	text-decoration: none;
 }
 
-li {
+footer li {
 	margin-left: 20px;
 }
 
-.bg {
-	background: url(/imgs/back.jfif);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 40px;
-	height: 500px;
+.game {
+	display: flex;
+	flex-basis: auto;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: space-evenly;
+	word-wrap: break-word;
 }
+
 
 @media screen and (max-width:725px) {
 	figure, article {
@@ -103,4 +97,4 @@ li {
 	.bg {
 		height: 380px;
 	}
-}s
+}
