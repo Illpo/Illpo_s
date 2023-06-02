@@ -67,7 +67,21 @@
 		</div>
 	</div>
 	<div class="info2 fade">
-		
+		<div class="slide fade" >
+			<img src="./THM1.png">
+		</div>
+		<div class="slide fade" >
+			<img src="./THM2.png">
+		</div>
+		<div class="slide fade">
+			<img src="./THM3.png">
+		</div>
+		<div class="slide fade">
+			<img src="./net+.png">
+		</div>
+		<div class="slide fade">
+			<img src="./sec+.png">
+		</div>
 	</div>
 	
 	<footer class="fade">
@@ -84,5 +98,24 @@
 			</ul>
 		</div>
 	</footer>
+<script>
+	var slideIndex = 0;
+	showSlide();
+
+	function showSlide() {
+		var i;
+		var s = document.getElementsByClassName("slide");
+
+		for (i = 0; i < s.length; i++) {
+			s[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > s.length) { slideIndex = 1 }
+
+		s[slideIndex -1].style.display = "block";
+
+		setTimeout(showSlide, 3550);
+	}
+</script>
 </body>
 </html>
