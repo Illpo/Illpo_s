@@ -1,7 +1,29 @@
+/* Track */
+::-webkit-scrollbar {
+  width: 5px;
+  right: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+::-webkit-scrollbar-track {
+	display: none;
+	
+}
+
 body {
 	margin: 0;
 	font-family: Verdana, sans-serif;
 	background: linear-gradient(lightgreen, lightblue, black);
+	overflow-y: overlay;
 }
 
 .fade {
@@ -31,27 +53,51 @@ nav a {
 }
 
 main {
+	background: url(/imgs/back.jfif);
+	background-size: auto 550px;
+	background-repeat: no-repeat;
 	width: 100%;
 	display: flex;
-	margin-top: 10px;
 	flex-wrap: wrap;
-	flex-basis: auto;
 	justify-content: center;
 }
 
-figure img {
-	text-align: center;
-	border-radius: 25px;
-	border: white solid 6px;
+figure {
+	margin: 0;
+	padding: 0;
+	align-self: flex-end;
 }
 
-.game {
+figure img {
+	border-radius: 25px;
+	height: 555px;
+	margin-right: 48px;
+}
+
+article {
+	font-weight: bold;
+	font-size: 2rem;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+	text-shadow: black 1px 1px 5px;
+}
+
+.mini {
+	width: 30px;
+	height: 30px;
+}
+
+.info, .info2 {
 	padding-left: 4px;
 	padding-right: 4px;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	text-align: center;
 	word-wrap: break-word;
+}
+.info2 {
+	text-shadow: 1px 1px 5px white;
 }
 
 footer {
@@ -61,6 +107,8 @@ footer {
 	margin-bottom: 40px;
 	color: white;
 	font-size: 10px;
+	flex-wrap: wrap;
+	word-break: break-word;
 }
 
 footer a {
@@ -71,17 +119,43 @@ footer a:hover {
 	text-decoration: none;
 }
 
+.list {
+	display: flex;
+	flex-basis: auto;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: space-around;
+	word-wrap: break-word;
+	padding-bottom: 100px;
+	border-bottom: white solid 2px;
+}
+
+.item {
+	background: white;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 280px;
+}
+
 li {
 	margin-left: 20px;
 }
 
 .bg {
-	background: url(back.jfif);
+	background: url(/imgs/back.jfif);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 40px;
 	height: 500px;
+}
+
+@media screen and (max-width:395px) {
+	footer {
+		display: block;
+	}
 }
 
 @media screen and (max-width:725px) {
