@@ -88,7 +88,7 @@ article {
 	height: 30px;
 }
 
-.info, .info2 {
+.info{
 	padding-left: 4px;
 	padding-right: 4px;
 	margin-top: 80px;
@@ -97,7 +97,20 @@ article {
 	word-wrap: break-word;
 }
 .info2 {
-	text-shadow: 1px 1px 5px white;
+	text-align: center;
+	position: relative;
+	margin: auto;
+	margin-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: white solid 2px;
+}
+
+.slide {
+	display: none;	
+}
+
+.slide img {
+	height: 500px;
 }
 
 footer {
