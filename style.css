@@ -170,6 +170,9 @@ li {
 	footer {
 		display: block;
 	}
+	.slide img {
+		height: 234px;
+	}
 }
 
 @media screen and (max-width:725px) {
