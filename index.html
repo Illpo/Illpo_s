@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 	<title>HI</title>
 </head>
 <body>
 	<main class="fade">
 		<figure>
-			<img class="mainimg" src="./mee.png" title="Mr. Illpo">
+			<img class="mainimg" src="/static/imgs/mee.png" title="Mr. Illpo">
 		</figure>
 		<article>
 			<h1>Welcome to my site!</h1>
@@ -18,21 +18,21 @@
 		</article>
 	</main>
 	<div class="info fade">
-		<h1>SABlAGwAbABvAA==</h1>
+		<h1 class="b64">SGVsbG8=</h1>
 		<p>Interested in web dev & security | pentest</p>
-		<p>I work with node.js express framework<br>And trying things with C lang such as socket programming</p>
+		<p>I work with Rust and C</p>
 
 		<p>Contact me if you need to: illpochino@gmail.com</p>
 		<h3>Or</h3>
-		<a href="https://www.instagram.com/sagitario_d/"><img class="mini" src="./insta.png"></a>
-		<a href="https://twitter.com/IDiekonenko"><img class="mini" src="./Twitt.png"></a>
+		<a href="https://www.instagram.com/sagitario_d/" target="_blank"><img class="mini" src="/static/imgs/insta.png"></a>
+		<a href="https://twitter.com/IDiekonenko" target="_blank"><img class="mini" src="/static/imgs/twitt.png"></a>
 
 
 	</div>
 	<div class="list fade">
 		<div class="item">
-			
-			<ul><h2>Hobies:</h2>
+			<h2>Hobies:</h2>
+			<ul>
 				<li>Learning</li>
 				<li>Travel</li>
 				<li>Diving</li>
@@ -40,24 +40,24 @@
 			</ul>
 		</div>
 		<div class="item">
-			
-			<ul><h2>Education:</h2>
+			<h2>Education:</h2>
+			<ul>
 				<li>CATS college - 2 years in business</li>
 				<li>Kingston university - 1 year in business management</li>
 				<li>Geargian college - in automotive & business</li>
 			</ul>
 		</div>
 		<div class="item">
-			
-			<ul><h2>Worked at:</h2>
+			<h2>Worked at:</h2>
+			<ul>
 				<li>Pego & citroen in Slowakia</li>
 				<li>LG Chem in Poland</li>
 				<li>KERAMPOL in Poland</li>
 			</ul>
 		</div>
 		<div class="item">
-			
-			<ul><h2>Languages:</h2>
+			<h2>Languages:</h2>
+			<ul>
 				<li>English</li>
 				<li>Ukranian</li>
 				<li>Russian</li>
@@ -68,27 +68,27 @@
 	</div>
 	<div class="info2 fade">
 		<div class="slide fade" >
-			<img src="./THM1.png">
+			<img src="/static/cert/THM1.png">
 		</div>
 		<div class="slide fade" >
-			<img src="./THM2.png">
+			<img src="/static/cert/THM2.png">
 		</div>
 		<div class="slide fade">
-			<img src="./THM3.png">
+			<img src="/static/cert/THM3.png">
 		</div>
 		<div class="slide fade">
-			<img src="./net+.png">
+			<img src="/static/cert/net+.png">
 		</div>
 		<div class="slide fade">
-			<img src="./sec+.png">
+			<img src="/static/cert/sec+.png">
 		</div>
 	</div>
 	
 	<footer class="fade">
 		<div>
 			<ul>My links:
-				<li><a href="https://www.instagram.com/sagitario_d/">Instagram</a></li>
-				<li><a href="https://twitter.com/IDiekonenko">Twitter</a></li>
+				<li><a href="https://www.instagram.com/sagitario_d/" target="_blank">Instagram</a></li>
+				<li><a href="https://twitter.com/IDiekonenko" target="_blank">Twitter</a></li>
 			</ul>
 		</div>
 		<div>
@@ -116,6 +116,17 @@
 
 		setTimeout(showSlide, 3550);
 	}
+
+	const textElement = document.querySelector('.b64');
+
+	textElement.addEventListener('mouseover', () => {
+	  textElement.textContent = 'Hello';
+	});
+
+	textElement.addEventListener('mouseout', () => {
+	  textElement.textContent = 'SGVsbG8=';
+	});
+
 </script>
 </body>
 </html>
