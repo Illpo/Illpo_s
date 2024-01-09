@@ -70,7 +70,7 @@ nav a {
 }
 
 main {
-	background: url(/static/imgs/back.jfif);
+	background: url(./back.jfif);
 	background-size: auto 550px;
 	background-repeat: no-repeat;
 	width: 100%;
